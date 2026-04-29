@@ -3,7 +3,7 @@
    Blog de conspiraciones - Gestion de teorias
    ============================================ */
 
-const API_URL = 'http://localhost:3000/api/teorias';
+const API_URL = 'https://mi-backendteoriaz.onrender.com/api/teorias';
 
 let teorias = [];
 let modoEdicion = false;
