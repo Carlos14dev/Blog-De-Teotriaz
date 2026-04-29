@@ -718,3 +718,408 @@ body.claro .text-purple {
     animation-timing-function: steps(4);
     animation-iteration-count: 1;
 }
+
+/* ===== RESPONSIVE DESIGN COMPLETO - AGREGAR AL FINAL DEL ARCHIVO Deco.css ===== */
+
+/* === TABLETAS (768px - 1024px) === */
+@media (max-width: 1024px) {
+    .galeria-4x4 {
+        gap: 20px;
+        padding: 20px;
+    }
+    
+    .targeta {
+        padding: 15px;
+    }
+    
+    .imagen {
+        height: 140px;
+    }
+}
+
+/* === TABLETAS PEQUEÑAS Y MÓVILES GRANDES (600px - 768px) === */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    .encabezado {
+        margin: 10px auto 20px auto;
+        padding: 20px 15px;
+    }
+    
+    .titulo {
+        font-size: 1.5rem;
+        word-wrap: break-word;
+    }
+    
+    .descripcion {
+        font-size: 0.8rem;
+        word-wrap: break-word;
+    }
+    
+    /* Navegación responsive */
+    .nav-global ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+    
+    .nav-global a, 
+    .boton-nav {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+    
+    /* Galería 4x4 se convierte en 2x2 */
+    .galeria-4x4 {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        padding: 15px;
+    }
+    
+    .imagen {
+        height: 120px;
+    }
+    
+    .pie-foto {
+        font-size: 0.7rem;
+    }
+    
+    /* Secciones de teoría */
+    .teoria {
+        padding: 15px;
+        margin: 20px 0;
+    }
+    
+    .teoria h2 {
+        font-size: 1.3rem;
+        word-wrap: break-word;
+    }
+    
+    .teoria p {
+        font-size: 0.9rem;
+    }
+    
+    .teoria img,
+    .teoria video {
+        width: 100% !important;
+        height: auto !important;
+    }
+    
+    .teoria img[width="150"] {
+        width: 70px !important;
+        height: auto !important;
+    }
+    
+    /* Tabla responsive - scroll horizontal */
+    .tabla-container {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .tabla-conspi {
+        min-width: 600px;
+    }
+    
+    .tabla-conspi th,
+    .tabla-conspi td {
+        padding: 8px 6px;
+        font-size: 0.8rem;
+    }
+    
+    /* Formulario */
+    .formulario-conspi {
+        padding: 15px;
+    }
+    
+    fieldset {
+        padding: 12px;
+    }
+    
+    legend {
+        font-size: 0.9rem;
+        padding: 3px 12px;
+    }
+    
+    input, select, textarea {
+        padding: 10px;
+        font-size: 14px;
+    }
+    
+    button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+        width: 100%;
+        margin: 5px 0;
+    }
+    
+    .botones-form {
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    /* Carrusel */
+    .contenedor .tarjeta {
+        width: 100% !important;
+        height: auto !important;
+    }
+    
+    .contenedor img {
+        width: 100% !important;
+        height: auto !important;
+    }
+    
+    /* Ojos parpadeantes */
+    .ojo {
+        font-size: 60px;
+    }
+    
+    /* Footer */
+    .pie {
+        margin: 30px auto 15px auto;
+        padding: 15px;
+        font-size: 0.7rem;
+    }
+    
+    .pie nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .pie nav li {
+        display: inline-block;
+    }
+    
+    /* Lista de datos curiosos */
+    dl {
+        font-size: 0.85rem;
+    }
+    
+    dt {
+        font-size: 1rem;
+    }
+    
+    /* Tarjeta artículo */
+    .tarjeta-articulo {
+        padding: 15px;
+    }
+    
+    /* Enlaces especiales */
+    #contacto ul {
+        padding-left: 20px;
+    }
+    
+    /* Botón de arriba */
+    #arriba {
+        position: fixed;
+        bottom: 20px;
+        right: 10px;
+        z-index: 1000;
+        padding: 10px 15px;
+        font-size: 0.8rem;
+    }
+}
+
+/* === MÓVILES (menos de 600px) === */
+@media (max-width: 600px) {
+    body {
+        padding: 5px;
+    }
+    
+    .encabezado {
+        padding: 15px 10px;
+    }
+    
+    .titulo {
+        font-size: 1.3rem;
+    }
+    
+    .nav-global a, 
+    .boton-nav {
+        font-size: 0.85rem;
+        padding: 8px;
+    }
+    
+    /* Galería 4x4 se convierte en 1x1 (vertical) */
+    .galeria-4x4 {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .imagen {
+        height: 180px;
+    }
+    
+    .teoria {
+        padding: 12px;
+    }
+    
+    .teoria h2 {
+        font-size: 1.2rem;
+    }
+    
+    .teoria p {
+        font-size: 0.85rem;
+    }
+    
+    .teoria img[width="150"] {
+        width: 60px !important;
+    }
+    
+    /* Tabla */
+    .tabla-conspi {
+        min-width: 500px;
+    }
+    
+    .tabla-conspi th,
+    .tabla-conspi td {
+        padding: 6px 4px;
+        font-size: 0.7rem;
+    }
+    
+    /* Formulario */
+    .formulario-conspi {
+        padding: 10px;
+    }
+    
+    fieldset {
+        padding: 10px;
+    }
+    
+    legend {
+        font-size: 0.85rem;
+    }
+    
+    label {
+        font-size: 0.85rem;
+    }
+    
+    input, select, textarea {
+        padding: 8px;
+        font-size: 13px;
+    }
+    
+    /* Contenedor principal */
+    .contenedor {
+        padding: 0 10px;
+    }
+    
+    /* Ojos parpadeantes */
+    .ojos-observadores {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .ojo {
+        font-size: 40px;
+    }
+    
+    /* Footer */
+    .pie {
+        padding: 12px;
+    }
+    
+    .pie nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+    
+    /* Blockquote */
+    blockquote {
+        padding: 10px 15px;
+        font-size: 0.85rem;
+    }
+    
+    /* Aside */
+    aside {
+        padding: 10px;
+    }
+    
+    /* Lista de teorías de comunidad */
+    #lista li {
+        font-size: 0.85rem;
+        padding: 8px;
+    }
+}
+
+/* === MÓVILES MUY PEQUEÑOS (menos de 400px) === */
+@media (max-width: 400px) {
+    .titulo {
+        font-size: 1.1rem;
+    }
+    
+    .teoria h2 {
+        font-size: 1rem;
+    }
+    
+    .teoria p {
+        font-size: 0.8rem;
+    }
+    
+    .pie-foto {
+        font-size: 0.6rem;
+    }
+    
+    button {
+        font-size: 0.8rem;
+        padding: 8px 15px;
+    }
+    
+    .ojo {
+        font-size: 30px;
+    }
+}
+
+/* === ORIENTACIÓN HORIZONTAL EN MÓVILES === */
+@media (max-width: 900px) and (orientation: landscape) {
+    .nav-global ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .galeria-4x4 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .imagen {
+        height: 100px;
+    }
+    
+    .teoria img,
+    .teoria video {
+        max-width: 50%;
+    }
+}
+
+/* === MEJORAS PARA TOUCH (móviles/tabletas) === */
+@media (hover: none) and (pointer: coarse) {
+    /* Botones más grandes para dedos */
+    button, 
+    .nav-global a,
+    .boton-nav,
+    .btn-editar,
+    .btn-eliminar {
+        min-height: 44px;
+        min-width: 44px;
+    }
+    
+    /* Espaciado para evitar clicks accidentales */
+    .nav-global ul {
+        gap: 12px;
+    }
+    
+    /* Eliminar hover en touch (usa active en su lugar) */
+    .targeta:hover {
+        transform: none;
+    }
+    
+    .targeta:active {
+        transform: scale(0.98);
+    }
+}

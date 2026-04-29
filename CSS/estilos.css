@@ -564,3 +564,102 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 ::-webkit-scrollbar-thumb:hover {
     background: #c46464;
 }
+
+/* Agregar al final de estilos.css */
+
+/* === RESPONSIVE PARA LA TABLA CRUD === */
+@media (max-width: 768px) {
+    .container {
+        padding: 5px;
+    }
+    
+    .card {
+        padding: 12px;
+        margin-bottom: 15px;
+    }
+    
+    .card h2 {
+        font-size: 1.1rem;
+    }
+    
+    /* Tabla responsive con scroll */
+    .tabla-container {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    table {
+        min-width: 550px;
+    }
+    
+    th {
+        font-size: 0.7rem;
+        padding: 8px;
+    }
+    
+    td {
+        padding: 8px;
+        font-size: 0.75rem;
+    }
+    
+    /* Formulario campos */
+    .campo {
+        margin-bottom: 12px;
+    }
+    
+    label {
+        font-size: 0.8rem;
+    }
+    
+    input, select, textarea {
+        padding: 8px;
+        font-size: 13px;
+    }
+    
+    /* Botones */
+    .btn-editar, 
+    .btn-eliminar {
+        padding: 5px 10px;
+        font-size: 10px;
+        display: inline-block;
+        margin: 2px;
+    }
+    
+    /* Mensajes flotantes */
+    .mensaje {
+        top: 10px;
+        right: 10px;
+        left: 10px;
+        padding: 10px;
+        font-size: 0.8rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .botones-form {
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .btn-guardar,
+    .btn-actualizar,
+    .btn-cancelar {
+        width: 100%;
+    }
+    
+    table {
+        font-size: 0.7rem;
+    }
+    
+    th, td {
+        padding: 5px;
+    }
+    
+    .btn-editar, 
+    .btn-eliminar {
+        padding: 4px 8px;
+        font-size: 9px;
+        margin: 2px 1px;
+    }
+}
