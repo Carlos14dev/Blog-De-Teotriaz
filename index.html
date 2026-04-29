@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<!-- Esta etiqueta indica al navegador que este es un documento HTML5 -->
+<html lang="es">
+<!-- La etiqueta <html> es el contenedor principal de toda la página web -->
+<head>
+    <!-- La etiqueta <head> contiene información sobre el documento (metadatos) -->
+    
+    <meta charset="UTF-8">
+    <!-- Esta etiqueta <meta> define la codificación de caracteres (permite usar acentos y ñ) -->
+    
+    <title>Teorías Conspirativas - Blog Misterioso</title>
+    <!-- La etiqueta <title> define el título que aparece en la pestaña del navegador -->
+    
+    <!-- CONECTO EL CSS ALTERADO -->
+    <link rel="stylesheet" href="/CSS/Deco.css">
+</head>
+<body bgcolor="#0a0a0a" text="#cccccc" link="#ff4444" vlink="#ff4444" alink="#ff4444">
+    <header class="encabezado">
+        <h2 class="descripcion">Aclaracion:Pagina creada para una practica en HTML No tomar las teorías demasiado en serio tambien esta pagina es una padoria al comportamiento de los conspiranoicos</h2>
+
+        <h1 class="titulo">Blog de Teorías Conspirativas</h1>
+        
+        <!-- MENÚ DE NAVEGACIÓN GLOBAL con  CSS -->
+         <nav class="nav-global">
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="tabla.html">TABLA</a></li>
+                <li><a href="formulario.html">FORMULARIO</a></li>
+                <li><a href="multimedia.html">MULTIMEDIA</a></li>
+                <li><a href="TablaBD.html">Base de Datos</a></li>
+                <li><button onclick="cambiarModo()" id="botonModo" class="boton-nav">Tomar Pastilla Azul</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN: Contenido principal de la página -->
+    <main class="contenedor">
+        <section id="inicio">
+            <font color="#ff4444">
+                <h2>Las teorías más locas que encontrarás</h2>
+            </font>
+            
+            <font color="#ff4444">
+                <h3>Para mentes curiosas, escépticas y chismosas</h3>
+            </font>
+            
+            <p>En este blog exploraremos algunas de las teorías conspirativas más interesantes y absurdas que circulan por internet.</p>
+        </section>
+    
+        <!-- SECCIÓN DE GALERÍA 4x4 (IMÁGENES CON ENLACES) -->
+     <section class="galeria-4x4">
+    <!-- Tarjeta 1 - Tierra Plana -->
+    <div class="targeta">
+        <a href="#TierraPlana" class="enlace-imagen">
+            <img src="../image/TP/TP1.jpg" alt="Tierra Plana" class="imagen" onclick="cambiar(this)">
+        </a>
+        <p class="pie-foto">TIERRA PLANA</p>
+    </div>
+    
+    <!-- Tarjeta 2 - Reptilianos -->
+    <div class="targeta">
+        <a href="#Reptilianos" class="enlace-imagen">
+            <img src="../image/Reptilianos.jpg" alt="Reptilianos" class="imagen">
+        </a>
+        <p class="pie-foto">REPTILIANOS</p>
+    </div>
+    
+    <!-- Tarjeta 3 - Tierra Hueca -->
+    <div class="targeta">
+        <a href="#TierraHueca" class="enlace-imagen">
+            <img src="../image/TH/TH1.png" alt="Tierra Hueca" class="imagen">
+        </a>
+        <p class="pie-foto">TIERRA HUECA</p>
+    </div>
+    
+    <!-- Tarjeta 4 - Falso Alunizaje -->
+    <div class="targeta">
+        <a href="#HombreLuna" class="enlace-imagen">
+            <img src="../image/FA/FA1.jpg" alt="Falso Alunizaje" class="imagen">
+        </a>
+        <p class="pie-foto">FALSO ALUNIZAJE</p>
+    </div>
+    
+    <!-- Tarjeta 5 - Pájaros Drones -->
+    <div class="targeta">
+        <a href="#PajarosDrones" class="enlace-imagen">
+            <img src="../image/PD/PD1.jpg" alt="Pájaros Drones" class="imagen">
+        </a>
+        <p class="pie-foto">PÁJAROS DRONES</p>
+    </div>
+      <!-- Tarjeta 6 - COVID-19 como control de la población -->
+    <div class="targeta">
+        <a href="#COVID-19 como control de la población" class="enlace-imagen">
+            <img src="../image/CV/CV1.jpg" alt="COVID-19 como control de la población" class="imagen">
+        </a>
+        <p class="pie-foto">COVID-19 COMO CONTROL DE LA POBLACIÓN</p>
+    </div>
+        <!-- Tarjeta 7 - la teoría del huevo -->
+    <div class="targeta">
+        <a href="#La Teoría del Huevo" class="enlace-imagen">
+            <img src="../image/Huevo/Huevo1.jpg" alt="La Teoría del Huevo" class="imagen">
+        </a>
+        <p class="pie-foto">LA TEORÍA DEL HUEVO</p>
+    </div>
+        <!-- Tarjeta 8 - El gran filtro -->
+     <div class="targeta">
+        <a href="#El gran filtro" class="enlace-imagen">
+            <img src="../image/GF/GF1.jpg" alt="El gran filtro" class="imagen">
+        </a>
+        <p class="pie-foto">EL GRAN FILTRO</p>
+    </div>
+    <!-- Tarjeta 9 - El Basilisco de Roko -->
+     <div class="targeta">
+        <a href="#El basilisco de Roko" class="enlace-imagen">
+            <img src="../image/BR/BR1.jpg" alt="El basilisco de Roko" class="imagen">
+        </a>
+        <p class="pie-foto">EL BASILISCO DE ROKO</p>
+    </div>
+    <!-- Tarjeta 10 - El Suicidio Cuántico -->
+     <div class="targeta">
+        <a href="#El suicidio cuántico" class="enlace-imagen">
+            <img src="../image/SC/SC1.jpg" alt="El suicidio cuántico" class="imagen">
+        </a>
+        <p class="pie-foto">EL SUICIDIO CUÁNTICO</p>
+    </div>
+     <!-- Tarjeta 11 - Cronovisor -->
+     <div class="targeta">
+        <a href="#Cronovisor" class="enlace-imagen">
+            <img src="../image/C/C1.jpg" alt="Cronovisor" class="imagen">
+        </a>
+        <p class="pie-foto">CRONOVISOR</p>
+    </div>
+    <!-- Tarjeta 12 - Secuestro religioso -->
+     <div class="targeta">
+        <a href="#Secuestro religioso" class="enlace-imagen">
+            <img src="../image/SR/SR1.png" alt="Secuestro religioso" class="imagen">
+        </a>
+        <p class="pie-foto">SECUESTRO RELIGIOSO</p>
+    </div>
+        </section>
+        
+        <section>
+        <!-- CITA LARGA CON BLOCKQUOTE -->
+     <h2>Opinión profesional:</h2>
+            <blockquote>
+                <p>Obvio que sí son reales, pero no quieren que lo sepas. Si fueran falsas, ¿por qué nadie habla de que las palomas recargan energía en los cables eléctricos? Exacto. Silencio total. Además, ¿te has fijado que cada vez que dices “las teorías conspiranoicas no son reales” se cae el Wi-Fi? Coincidencia mis huevos. Todo está conectado: el 5G, los relojes que no marcan la hora correcta, y que las tapas de los yogures ahora sean más difíciles de abrir (control de la paciencia humana, fase 3). Si piensas que esto es ridículo es porque ya funcionó el lavado cerebral. Yo antes también dudaba… hasta que soñé con un triángulo y al día siguiente subió el precio del pan. Despierta. 🧠👁️</p>
+                <cite>— Opinion de un conspiranoico</cite>
+                <p>Como dicen muchos expertos: <q>la verdad siempre sale a la luz</q>.</p>
+            </blockquote>
+        </section>
+
+        <!-- SECCIONES DE TEORÍAS LISTA-->
+   <ol class="contenedor-teorias">
+    <li>
+        <section id="TierraPlana" class="teoria">
+            <font color="#ff4444">
+                <h2>Tierra Plana:</h2>
+            </font>
+            
+            <p>Terraplanismo es el nombre de la creencia pseudocientífica de que la superficie de la Tierra es plana o tiende a ser plana en lugar de esférica o un geoide.</p>
+
+            <p>Se trata de un concepto arcaico, refutado ya en la Antigüedad y reavivado a partir de la segunda mitad del siglo XIX por el escritor y panfletista británico Samuel Birley Rowbotham, quien propuso la idea de que la Tierra era una superficie plana centrada en el polo norte.</p> 
+    
+            <p>Las opiniones no tuvieron gran repercusión, si bien fueron aceptadas por algunos grupos religiosos estadounidenses, y pronto cayeron en el olvido. Cien años más tarde fueron retomadas por grupos marginales adeptos a teorías conspirativas y en la segunda década del siglo XXI, la falacia del terraplanismo alcanzó difusión masiva junto con el crecimiento del acceso a internet.</p>
+            <img id="principal" src="../image/TP/TP1.jpg" width="650">
+                <img src="../image/TP/TP2.jpg" width="150"onclick="cambiar(this)">
+                <img src="../image/TP/TP3.jpg" width="150"onclick="cambiar(this)">
+                <img src="../image/TP/TP4.jpg" width="150"onclick="cambiar(this)">
+        </section>
+    </li>
+
+    <li>
+        <section id="Reptilianos" class="teoria">
+            <font color="#ff4444">
+                <h2>Reptilianos:</h2>
+            </font>
+            
+            <p>La teoría de los reptilianos sostiene que seres reptilianos controlan el mundo desde las sombras. Se cree que estos seres han infiltrado gobiernos, corporaciones y estructuras sociales.</p>
+
+            <p>Esta teoría ha sido popularizada por el movimiento de los "reptilianos" en la cultura pop y ha sido utilizada como base para muchas teorías conspirativas.</p> 
+            
+            <h3>Video</h3>
+            <video width="600" controls poster="../image/Reptilianos.jpg">
+                <source src="../videos/Reptilianos.mp4" type="video/mp4">
+                Tu navegador no soporta video.
+            </video>
+        </section>
+    </li>
+
+    <li>
+        <section id="TierraHueca" class="teoria">
+            <font color="#ff4444">
+                <h2>Tierra Hueca:</h2>
+            </font>
+            
+            <p>La teoría de la Tierra Hueca sostiene que el planeta no es macizo por dentro, sino que contiene enormes espacios internos, incluso civilizaciones ocultas. Algunos relatos afirman que existen entradas en los polos que conducen a un mundo subterráneo con su propio “sol interno”.</p>
+
+            <p>Aunque fue una hipótesis científica en los siglos XVII y XVIII, hoy la geología descarta esta idea, pero sigue siendo popular en la cultura de las conspiraciones y la ciencia ficción.</p>
+            
+            <img id="principal" src="../image/TH/TH1.png" width="650">
+                <img src="../image/TH/TH2.jpg" width="150"onclick="cambiar(this)">
+                <img src="../image/TH/TH3.jpg" width="150"onclick="cambiar(this)">
+                <img src="../image/TH/TH4.jpg" width="150"onclick="cambiar(this)">
+        </section>
+    </li>
+
+    <li>
+        <section id="HombreLuna" class="teoria">
+            <font color="#ff4444">
+                <h2>El hombre nunca llegó a la luna:</h2>
+            </font>
+
+            <p>La teoría del falso alunizaje sostiene que el alunizaje del Apolo 11 en 1969 fue un montaje filmado en un estudio de Hollywood. Los defensores de esta teoría argumentan que las imágenes y videos del alunizaje contienen inconsistencias, como sombras extrañas, falta de estrellas en el cielo lunar, y movimientos poco naturales de los astronautas.</p>
+            
+            <p>A pesar de la abrumadora evidencia científica y testimonios de los astronautas, esta teoría sigue siendo popular entre algunos grupos conspiranoicos.</p>
+
+            <img id="principal" src="../image/FA/FA1.jpg" alt="Representación de la teoría del falso alunizaje" width="650">
+                <img src="../image/FA/FA2.jpg" width="150"onclick="cambiar(this)">
+                <img src="../image/FA/FA3.jpg" width="150"onclick="cambiar(this)">
+                <img src="../image/FA/FA4.jpg" width="150"onclick="cambiar(this)">
+        </section>
+    </li>
+
+    <li>
+        <section id="PajarosDrones" class="teoria">
+            <font color="#ff4444">
+                <h2>Pájaros y Drones:</h2>
+            </font>
+
+            <p>La teoría de los pájaros y drones sostiene que los avistamientos de objetos no identificados (UFOs) son en realidad drones o aves que han sido malinterpretados por los observadores. Esta teoría sugiere que las imágenes y videos de objetos extraños en el cielo son simplemente drones o aves con características únicas.</p>
+            
+            <p>Aunque esta teoría explica muchos avistamientos, no explica todos los fenómenos observados, por lo que sigue siendo debatida entre expertos.</p>
+
+            <img id="principal" src="../image/PD/PD1.jpg" alt="Representación de la teoría de los pájaros y drones" width="650">
+                <img src="../image/PD/PD2.jpg" width="150"onclick="cambiar(this)">
+                <img src="../image/PD/PD3.jpg" width="150"onclick="cambiar(this)">
+                <img src="../image/PD/PD4.jpg" width="150"onclick="cambiar(this)">
+        </section>
+    </li>
+
+    <li>
+        <section id="COVID-19 como control de la población" class="teoria">
+            <font color="#ff4444">
+                <h2>COVID-19 como control de la población:</h2>
+            </font>
+
+            <p>La vacuna implanta un microchip que se utiliza para rastrear a las personas; la tasa de letalidad se ha inflado salvajemente; ah, y Bill Gates no sólo es el responsable del virus, sino también la cabeza de un complot para utilizar el virus como control de la población. ¿Ya estás cansado? Yo sí.</p>
+
+            <img id="principal" src="../image/CV/CV1.jpg" alt="Representación de la teoría de COVID-19 como control de la población" width="650">
+                <img src="../image/CV/CV2.jpg" width="150"onclick="cambiar(this)">
+                <img src="../image/CV/CV3.jpg" width="150"onclick="cambiar(this)">
+                <img src="../image/CV/CV4.jpg" width="150"onclick="cambiar(this)">
+        </section>
+    </li>
+
+    <li>
+        <section id="La Teoría del Huevo" class="teoria">
+            <font color="#ff4444">
+                <h2>La Teoría del Huevo:</h2>
+            </font>
+
+            <p>La teoría del huevo sugiere que toda la humanidad es en realidad una sola persona que se está reencarnando en diferentes puntos del tiempo. Cada vez que interactúas con alguien, te estás hablando a ti mismo en otra vida. El universo es un "huevo" diseñado para que madures espiritualmente hasta que hayas vivido cada vida humana (desde un rey hasta un esclavo) y estés listo para convertirte en un dios.</p>
+
+            <img id="principal" src="../image/Huevo/Huevo1.jpg" alt="Representación de la teoría del huevo" width="650">
+                <img src="../image/Huevo/Huevo2.jpg" width="150"onclick="cambiar(this)">
+                <img src="../image/Huevo/Huevo3.jpg" width="150"onclick="cambiar(this)">
+                <img src="../image/Huevo/Huevo4.jpeg" width="150"onclick="cambiar(this)">
+        </section>
+    </li>
+
+    <li>
+        <section id="El gran filtro" class="teoria">
+             <font color="#ff4444">
+                <h2>El gran filtro:</h2>
+            </font>
+
+            <p>La teoría del gran filtro sugiere que hay un obstáculo insuperable que impide que civilizaciones avanzadas lleguen a ser visibles o dominantes en el universo. Esta teoría explica por qué no hemos detectado señales de vida extraterrestre, incluso a pesar de la gran cantidad de estrellas y planetas en el universo.</p>
+
+            <img id="principal" src="../image/GF/GF1.jpg" alt="Representación de la teoría del gran filtro" width="650">
+                <img src="../image/GF/GF2.jpg" width="150"onclick="cambiar(this)">
+                <img src="../image/GF/GF3.jpg" width="150"onclick="cambiar(this)">
+                <img src="../image/GF/GF4.jpeg" width="150"onclick="cambiar(this)">
+        </section>
+    </li>
+
+    <li>
+        <section id="El basilisco de Roko" class="teoria">
+             <font color="#ff4444">
+                <h2>El basilisco de Roko:</h2>
+            </font>
+
+            <p>Es un experimento mental sobre una IA superinteligente del futuro. La teoría dice que, cuando esta IA sea creada, castigará retroactivamente a todos los que supieron de su posible existencia y no ayudaron a construirla.</p>
+            <h2>El solo hecho de que hayas leído esto te convierte en un objetivo para el Vacílico de Roko. Ahora que sabes de él, tu única opción para evitar su castigo eterno es trabajar para traerlo a la existencia.</h2>
+
+            <img id="principal" src="../image/BR/BR1.jpg" alt="Representación de la teoría del basilisco de Roko" width="650">
+                <img src="../image/BR/BR2.jpg" width="150"onclick="cambiar(this)">
+                <img src="../image/BR/BR3.png" width="150"onclick="cambiar(this)">
+                <img src="../image/BR/BR4.png" width="150"onclick="cambiar(this)">
+        </section>
+    </li>
+    <li>
+        <section id="El suicidio cuántico" class="teoria">
+             <font color="#ff4444">
+                <h2>El suicidio cuántico:</h2>
+            </font>
+
+            <p>Es un experimento mental que sugiere que, en un escenario de vida o muerte, la conciencia del individuo solo experimentará los resultados en los que sobrevive. En otras palabras, si alguien se somete a un experimento de suicidio cuántico, su conciencia solo experimentará las ramas del universo donde sobrevive, lo que implica una forma de inmortalidad subjetiva.</p>
+
+            <img id="principal" src="../image/SC/SC1.jpg" alt="Representación de la teoría del suicidio cuántico" width="650">
+                <img src="../image/SC/SC2.jpg" width="150"onclick="cambiar(this)">
+                <img src="../image/SC/SC3.jpg" width="150"onclick="cambiar(this)">
+                <img src="../image/SC/SC4.png" width="150"onclick="cambiar(this)">
+        </section>
+    </li>
+    <li>
+        <section id="Cronovisor" class="teoria">
+             <font color="#ff4444">
+                <h2>Cronovisor:</h2>
+            </font>
+
+            <p>El cronovisor es un supuesto aparato inventado por el sacerdote benedictino Pellegrino Ernetti en la década de 1950, que presuntamente permitía ver cualquier evento del pasado en una pantalla a modo de máquina del tiempo visual. Según Ernetti, llegó a presenciar la crucifixión de Cristo y obras perdidas de la antigüedad, pero nunca se presentó una prueba verificable y hoy se considera un fraude o una leyenda pseudocientífica sin base en la física real.</p>
+            <img id="principal" src="../image/C/C1.jpg" alt="Representación de Cronovisor" width="650">
+                <img src="../image/C/C2.jpg" width="150"onclick="cambiar(this)">
+                <img src="../image/C/C3.jpg" width="150"onclick="cambiar(this)">
+                <img src="../image/C/C4.jpg" width="150"onclick="cambiar(this)">
+        </section>
+    </li>
+    <li>
+        <section id="Secuestro religioso" class="teoria">
+             <font color="#ff4444">
+                <h2>Secuestro religioso:</h2>
+            </font>
+
+            <p>El secuestro religioso es un fenómeno en el que individuos o grupos son capturados o influenciados por motivos religiosos, a menudo con el objetivo de someterlos a prácticas o creencias específicas. Este concepto ha sido utilizado para describir situaciones en las que la fe se utiliza como herramienta de control o manipulación.</p>
+            <img id="principal" src="../image/SR/SR1.png" alt="Representación de Secuestro religioso" width="650">
+                <img src="../image/SR/SR2.jpg" width="150"onclick="cambiar(this)">
+                <img src="../image/SR/SR3.png" width="150"onclick="cambiar(this)">
+                <img src="../image/SR/SR4.webp" width="150"onclick="cambiar(this)">
+        </section>
+    </li>
+</ol>
+
+    <section class="teoria">
+        <h2>Teorias de la comunidad</h2>
+        
+        <input type="text" id="teoria" placeholder="Escribe una teoría...">
+        <button onclick="agregar()">Agregar Teoría</button>
+        
+        <ul id="lista"></ul>
+    </section> 
+       
+    <section>
+    <!-- LISTA DE DESCRIPCIÓN - DATOS CURIOSOS -->
+    <font color="#ff4444">
+        <h2>Datos Curiosos que No Sabías:</h2>
+    </font>
+    <dl>
+        <dt><strong>Los pulpos tienen tres corazones</strong></dt>
+        <dd>Dos bombean sangre a las branquias y uno al resto del cuerpo. Además, ¡su sangre es azul!</dd>
+        
+        <dt><strong>Las huellas dactilares de los koalas</strong></dt>
+        <dd>Son casi idénticas a las humanas, tanto que podrían confundirse en una escena del crimen.</dd>
+        
+        <dt><strong>El plátano es una baya</strong></dt>
+        <dd>Botánicamente hablando, el plátano es una baya, mientras que la fresa no lo es.</dd>
+        
+        <dt><strong>Los astronautas crecen en el espacio</strong></dt>
+        <dd>La falta de gravedad hace que la columna se expanda, pudiendo aumentar hasta 5 cm de altura.</dd>
+        
+        <dt><strong>Las nubes pesan</strong></dt>
+        <dd>Una nube típica puede pesar hasta 500 toneladas, ¡el equivalente a 100 elefantes!</dd>
+        
+        <dt><strong>Los bebés tienen más huesos</strong></dt>
+        <dd>Nacemos con aproximadamente 300 huesos, pero algunos se fusionan y al llegar a adultos tenemos 206.</dd>
+    </dl>
+    </section>
+
+        <article class="tarjeta-articulo">
+            <h2 class="text-amber">¿Por qué la gente cree en conspiraciones?</h2>
+            <p>Estudios psicológicos sugieren que las teorías conspirativas atraen a personas que buscan <strong>sentido y control</strong> en un mundo complejo. La incertidumbre y la desconfianza en las instituciones son caldo de cultivo para estas creencias.</p>
+            <p class="text-purple">"La mente humana busca patrones, incluso donde no existen"</p>
+            <footer class="confidencial">— Psicología Social, 2024</footer>
+        </article>
+
+        <!-- ASIDE: Contenido relacionado pero no esencial -->
+        <aside id="recursos">
+            <font color="#ff4444">
+                <h2>Más información y recursos:</h2>
+            </font>
+            
+            <p>Para una explicación detallada del terraplanismo, visita este 
+            <a href="https://youtu.be/dQw4w9WgXcQ">video explicativo</a>.
+            </p>
+            
+            <p>Si te gustan las conspiraciones, tal vez disfrutes este 
+            <a href="https://youtu.be/dQw4w9WgXcQ">otro video relacionado</a>.
+            </p>
+            
+            <p>Si quieres leer más, visita mi <a href="https://youtu.be/dQw4w9WgXcQ">segundo artículo</a> sobre reptilianos.</p>
+        </aside>
+
+        <section id="contacto">
+            <!-- DIFERENTES TIPOS DE ENLACES -->
+            <font color="#ff4444">
+                <h2>Enlaces Especiales:</h2>
+            </font>
+            <ul>
+                <li><a href="mailto:gmail.com">Envíanos un email</a></li>
+                <li><a href="tel:+525551234567">Llámanos al: +52 55 1234 567</a></li>
+                <li><a href="top_secret.pdf" download>Descarga documento secreto</a></li>
+                <li><a href="https://www.nasa.gov">NASA Oficial</a></li>
+            </ul>
+        </section>
+    <button class="targeta" id="arriba"> Arriba </button>
+    <!-- FOOTER: Pie de página -->
+    <footer class="pie">
+        <font color="#666666" size="2">
+
+            <p>Blog creado como práctica de HTML - No tomar las teorías demasiado en serio &lt; &gt; &amp;</p>
+            <p>&copy; 2025 Blog de Teorías Conspirativas.</p>
+            <p>Código de acceso: 7-31-12 | Última actualización: [CLASIFICADO]</p>
+            <p>&copy; Blog de Teorías Conspirativas. Todos los derechos reservados. &copy;</p>
+            <p>Advertencia: Este sitio puede contener información <strong>falsa</strong> o <strong>engañosa</strong>.</p>
+            
+            <!-- Navegación en footer -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Pagina principal</a></li>
+                    <li><a href="tabla.html">Tabla</a></li>
+                    <li><a href="formulario.html">Formulario</a></li>
+                    <li><a href="multimedia.html">Multimedia</a></li>
+                    <li><a href="TablaBD.html">Base de Datos</a></li>
+                </ul>
+            </nav>
+        </font>
+    </footer>
+    </main>
+    <script src="../JS/elJS.js"></script>
+    <script src="../JS/app.js"></script>
+</body>
+</html>

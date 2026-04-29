@@ -1,0 +1,720 @@
+/* ===== MODO OSCURO  ===== */
+
+body {
+    font-family: 'Courier New', monospace;
+    background: #0d0a0a;
+    color: #e0c8c8;
+    line-height: 1.6;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* ===== ENCABEZADO ===== */
+.encabezado {
+    background: #1a1212;
+    max-width: 1200px;
+    margin: 20px auto 30px auto;
+    padding: 30px 20px;
+    text-align: center;
+    border: 2px solid #8b3a3a;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.titulo {
+    color: #c46464;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    padding: 5px 15px;
+    display: inline-block;
+    border-bottom: 4px solid #8b3a3a;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 0 0 5px rgba(196, 100, 100, 0.5);
+}
+
+.descripcion {
+    color: #a08080;
+    font-size: 0.9rem;
+    background: #120c0c;
+    padding: 10px;
+    border-left: 4px solid #c46464;
+    border-right: 4px solid #8b3a3a;
+    display: inline-block;
+}
+
+/* ===== NAVEGACIÓN GLOBAL ===== */
+.nav-global {
+    background: #120c0c;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 15px;
+    border: 2px solid #8b3a3a;
+    border-radius: 20px;
+    position: sticky;
+    top: 20px;
+    z-index: 1000;
+}
+
+.nav-global ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.nav-global a {
+    color: #e0c8c8;
+    text-decoration: none;
+    background: #0d0a0a;
+    padding: 8px 20px;
+    border: 1px solid #8b3a3a;
+    border-radius: 30px;
+    transition: all 0.2s;
+    font-size: 0.95rem;
+    display: inline-block;
+}
+
+.nav-global a:hover {
+    background: #8b3a3a;
+    border-color: #c46464;
+    color: #0d0a0a;
+    box-shadow: 0 0 10px rgba(196, 100, 100, 0.3);
+}
+
+.boton-nav {
+    background: #0d0a0a;
+    color: #e0c8c8;
+    border: 1px solid #8b3a3a;
+    border-radius: 30px;
+    padding: 8px 20px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin: 0;
+    display: inline-block;
+}
+
+.boton-nav:hover {
+    background: #8b3a3a;
+    border-color: #c46464;
+    color: #0d0a0a;
+    box-shadow: 0 0 10px rgba(196, 100, 100, 0.3);
+}
+
+/* ===== CONTENEDOR PRINCIPAL ===== */
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ===== GALERÍA 4x4 ===== */
+.galeria-4x4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-bottom: 50px;
+    padding: 25px;
+    background: #120c0c;
+    border: 2px solid #8b3a3a;
+    border-radius: 20px;
+}
+
+/* ===== TARJETA DE IMAGEN ===== */
+.targeta {
+    background: #1a1212;
+    border: 2px solid #8b3a3a;
+    border-radius: 20px;
+    padding: 20px 20px 25px 20px;
+    box-shadow: 0 15px 30px -10px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.targeta:hover {
+    border-color: #c46464;
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px -10px #c46464;
+}
+
+/* ===== IMAGEN ===== */
+.imagen {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    display: block;
+    border: 4px solid #120c0c;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    margin-bottom: 15px;
+    filter: grayscale(20%) brightness(0.85);
+    transition: all 0.2s;
+}
+
+.imagen:hover {
+    filter: grayscale(0%) brightness(1);
+    border-color: #8b3a3a;
+}
+
+/* ===== PIE DE FOTO ===== */
+.pie-foto {
+    color: #a08080;
+    font-size: 0.85rem;
+    text-align: center;
+    padding: 10px 5px 5px 5px;
+    border-top: 2px dashed #8b3a3a;
+    margin: 0 10px;
+    font-family: 'Courier New', monospace;
+}
+
+/* ===== TABLAS ===== */
+.tabla-conspi {
+    width: 100%;
+    border-collapse: collapse;
+    background: #120c0c;
+    margin: 30px 0;
+    border: 3px solid #8b3a3a;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.tabla-conspi caption {
+    color: #c46464;
+    font-size: 1.2rem;
+    background: #0d0a0a;
+    padding: 15px;
+    border: 2px solid #8b3a3a;
+    border-radius: 20px 20px 0 0;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+
+.tabla-conspi th {
+    background: #1a1212;
+    color: #e0c8c8;
+    padding: 12px;
+    border: 1px solid #8b3a3a;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 0.95rem;
+}
+
+.tabla-conspi td {
+    padding: 10px;
+    border: 1px solid #2a1a1a;
+    color: #c8b0b0;
+}
+
+.tabla-conspi tr:hover td {
+    background: #1a1212;
+    color: #c46464;
+}
+
+/* ===== FORMULARIO ===== */
+.formulario-conspi {
+    background: #120c0c;
+    margin: 30px 0;
+    padding: 25px;
+    border: 3px solid #8b3a3a;
+    border-radius: 20px;
+}
+
+fieldset {
+    border: 2px solid #8b3a3a;
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 25px;
+    background: #0d0a0a;
+}
+
+legend {
+    color: #c46464;
+    background: #0d0a0a;
+    padding: 5px 20px;
+    border: 2px solid #8b3a3a;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+    max-width: none;
+    margin-right: 8px;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #c46464;
+    outline: none;
+    box-shadow: 0 0 10px rgba(196, 100, 100, 0.3);
+}
+
+/* ===== BOTONES ===== */
+button {
+    background: #1a1212;
+    color: #e0c8c8;
+    border: 3px solid #8b3a3a;
+    border-radius: 30px;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin: 10px 10px 10px 0;
+    font-family: 'Courier New', monospace;
+    letter-spacing: 1px;
+    transition: all 0.2s;
+}
+
+button:hover {
+    background: #8b3a3a;
+    border-color: #c46464;
+    color: #0d0a0a;
+    box-shadow: 0 0 15px rgba(196, 100, 100, 0.3);
+}
+
+/* ===== PIE DE PÁGINA ===== */
+.pie {
+    background: #0d0a0a;
+    color: #6a5050;
+    text-align: center;
+    max-width: 1200px;
+    margin: 50px auto 20px auto;
+    padding: 20px;
+    border: 4px solid #8b3a3a;
+    border-radius: 15px;
+    font-size: 0.9rem;
+}
+
+.pie a {
+    color: #a08080;
+    text-decoration: none;
+    border-bottom: 1px dotted #8b3a3a;
+}
+
+.pie a:hover {
+    color: #c46464;
+    border-bottom-color: #c46464;
+}
+
+/* ===== BLOCKQUOTE ===== */
+blockquote {
+    background: #0d0a0a;
+    border: 6px solid #8b3a3a;
+    border-radius: 20px;
+    padding: 15px 20px;
+    margin: 20px 0;
+    font-style: italic;
+    color: #e0c8c8;
+}
+
+cite {
+    color: #c46464;
+    display: block;
+    margin-top: 10px;
+}
+
+/* ===== TEORÍAS ===== */
+.teoria {
+    background: #1a1212;
+    border: 2px solid #8b3a3a;
+    border-radius: 20px;
+    padding: 25px 30px;
+    margin: 30px 0;
+    box-shadow: 0 15px 30px -10px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+.teoria img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+    border: 3px solid #8b3a3a;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+}
+
+.teoria video {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+    border: 3px solid #8b3a3a;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+}
+
+.teoria:hover {
+    border-color: #c46464;
+    box-shadow: 0 20px 40px -10px #c46464;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+    .galeria-4x4 {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .galeria-4x4 {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 15px;
+    }
+}
+
+/* ===== MODO CLARO ===== */
+body.claro {
+    background: #0a1628;
+    color: #a8c8e8;
+}
+
+/* Encabezado modo claro */
+body.claro .encabezado {
+    background: #0d1f3c;
+    border-color: #2a6f8f;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+body.claro .titulo {
+    color: #4aa8d4;
+    text-shadow: 0 0 5px rgba(74, 168, 212, 0.3);
+    border-bottom-color: #2a6f8f;
+}
+
+body.claro .descripcion {
+    color: #7aa8c8;
+    background: #0a1628;
+    border-left-color: #4aa8d4;
+    border-right-color: #2a6f8f;
+}
+
+/* Navegación modo claro */
+body.claro .nav-global {
+    background: #0a1628;
+    border-color: #2a6f8f;
+}
+
+body.claro .nav-global a {
+    background: #0d1f3c;
+    color: #a8c8e8;
+    border-color: #2a6f8f;
+}
+
+body.claro .nav-global a:hover {
+    background: #2a6f8f;
+    color: #0a1628;
+    border-color: #4aa8d4;
+}
+
+body.claro .boton-nav {
+    background: #0d1f3c;
+    color: #a8c8e8;
+    border-color: #2a6f8f;
+}
+
+body.claro .boton-nav:hover {
+    background: #2a6f8f;
+    color: #0a1628;
+    border-color: #4aa8d4;
+}
+
+/* Galería modo claro */
+body.claro .galeria-4x4 {
+    background: #0a1628;
+    border-color: #2a6f8f;
+}
+
+body.claro .targeta {
+    background: #0d1f3c;
+    border-color: #2a6f8f;
+}
+
+body.claro .targeta:hover {
+    border-color: #4aa8d4;
+    box-shadow: 0 20px 40px -10px rgba(74, 168, 212, 0.3);
+}
+
+body.claro .imagen {
+    filter: brightness(0.95) saturate(0.9);
+    border-color: #1a2a4a;
+}
+
+body.claro .imagen:hover {
+    filter: brightness(1) saturate(1);
+    border-color: #4aa8d4;
+}
+
+body.claro .pie-foto {
+    color: #7aa8c8;
+    border-top-color: #2a6f8f;
+}
+
+body.claro .teoria img {
+    border-color: #2a6f8f;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+body.claro .teoria video {
+    border-color: #2a6f8f;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+/* Teorías modo claro */
+body.claro .teoria {
+    background: #0d1f3c;
+    border-color: #2a6f8f;
+}
+
+body.claro .teoria:hover {
+    border-color: #4aa8d4;
+    box-shadow: 0 20px 40px -10px rgba(74, 168, 212, 0.3);
+}
+
+/* Tabla modo claro */
+body.claro .tabla-conspi {
+    background: #0a1628;
+    border-color: #2a6f8f;
+}
+
+body.claro .tabla-conspi caption {
+    color: #4aa8d4;
+    background: #0a1628;
+    border-color: #2a6f8f;
+}
+
+body.claro .tabla-conspi th {
+    background: #0a1628;
+    color: #a8c8e8;
+    border-color: #2a6f8f;
+}
+
+body.claro .tabla-conspi td {
+    color: #a8c8e8;
+    border-color: #1a2a4a;
+}
+
+body.claro .tabla-conspi tr:hover td {
+    background: #0d1f3c;
+    color: #4aa8d4;
+}
+
+/* Formulario modo claro */
+body.claro .formulario-conspi {
+    background: #0a1628;
+    border-color: #2a6f8f;
+}
+
+body.claro fieldset {
+    border-color: #2a6f8f;
+    background: #0a1628;
+}
+
+body.claro legend {
+    color: #4aa8d4;
+    background: #0a1628;
+    border-color: #2a6f8f;
+}
+
+body.claro input,
+body.claro select,
+body.claro textarea {
+    background: #0d1f3c;
+    color: #a8c8e8;
+    border-color: #2a6f8f;
+}
+
+body.claro input:focus,
+body.claro select:focus,
+body.claro textarea:focus {
+    border-color: #4aa8d4;
+    box-shadow: 0 0 10px rgba(74, 168, 212, 0.3);
+}
+
+/* Botones modo claro */
+body.claro button {
+    background: #0d1f3c;
+    color: #a8c8e8;
+    border-color: #2a6f8f;
+}
+
+body.claro button:hover {
+    background: #2a6f8f;
+    color: #0a1628;
+    border-color: #4aa8d4;
+}
+
+/* Blockquote modo claro */
+body.claro blockquote {
+    background: #0a1628;
+    border-color: #2a6f8f;
+    color: #a8c8e8;
+}
+
+body.claro cite {
+    color: #4aa8d4;
+}
+
+/* Footer modo claro */
+body.claro .pie {
+    background: #0a1628;
+    color: #4a6a8a;
+    border-color: #2a6f8f;
+}
+
+body.claro .pie a {
+    color: #7aa8c8;
+}
+
+body.claro .pie a:hover {
+    color: #4aa8d4;
+}
+
+/* Enlaces modo claro */
+body.claro a {
+    color: #4aa8d4;
+}
+
+body.claro a:hover {
+    color: #7ac8e8;
+}
+
+/* Datos curiosos modo claro */
+body.claro dl {
+    color: #a8c8e8;
+}
+
+body.claro dt {
+    color: #4aa8d4;
+}
+
+body.claro dd {
+    color: #7aa8c8;
+}
+
+/* Artículo modo claro */
+body.claro .tarjeta-articulo {
+    background: #0d1f3c;
+    border-color: #2a6f8f;
+}
+
+body.claro .confidencial {
+    color: #4a6a8a;
+}
+
+/* Carrusel modo claro */
+body.claro .contenedor .tarjeta {
+    background: transparent;
+    border: none;
+}
+
+/* Lista dinámica modo claro */
+body.claro #lista {
+    color: #a8c8e8;
+}
+
+body.claro #lista li {
+    background: #0d1f3c;
+    border-bottom-color: #0a1628;
+}
+
+/* Textos específicos modo claro - Pastilla Azul */
+body.claro font[color="#00ffff"] {
+    color: #4aa8d4 !important;
+}
+
+body.claro font[color="#ff0000"],
+body.claro font[color="red"] {
+    color: #2a6f8f !important;
+}
+
+body.claro font[color="#9900ff"] {
+    color: #4aa8d4 !important;
+}
+
+body.claro font[color="#00ff00"] {
+    color: #3a8faf !important;
+}
+
+body.claro font[color="#ff4444"] {
+    color: #3a8faf !important;
+}
+
+body.claro font[color="#00ffff"] {
+    color: #3a8faf !important;
+}
+
+body.claro .text-amber {
+    color: #4aa8d4 !important;
+}
+
+body.claro .text-purple {
+    color: #7aa8c8 !important;
+}
+
+/* ===== OJOS PARPADEANTES ===== */
+.ojos-observadores {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.ojo {
+    font-size: 120px;
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+/* Animación de parpadeo - igual que el rebote de Cuphead pero con escala Y */
+@keyframes parpadeo {
+    0% {
+        transform: scaleY(1);
+    }
+    50% {
+        transform: scaleY(0.05);
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+/* Animación de parpadeo rápido */
+@keyframes parpadeoRapido {
+    0% {
+        transform: scaleY(1);
+    }
+    10% {
+        transform: scaleY(0.05);
+    }
+    20% {
+        transform: scaleY(1);
+    }
+    30% {
+        transform: scaleY(0.05);
+    }
+    40% {
+        transform: scaleY(1);
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+/* Efecto al pasar el cursor - los ojos parpadean */
+.ojos-observadores:hover .ojo {
+    animation-name: parpadeo;
+    animation-duration: 0.3s;
+    animation-timing-function: steps(3);
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+/* Efecto más intenso al hacer clic (parpadeo rápido como "ataque") */
+.ojos-observadores:active .ojo {
+    animation-name: parpadeoRapido;
+    animation-duration: 0.6s;
+    animation-timing-function: steps(4);
+    animation-iteration-count: 1;
+}

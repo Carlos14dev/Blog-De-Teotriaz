@@ -1,0 +1,566 @@
+/* ============================================
+   ESTILOS MODERNOS PARA CRUD - VERSION CONSPIRATIVA
+   Basado en Deco.css CON SOPORTE PARA CAMBIO DE MODO
+   ============================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', monospace;
+    background: #0d0a0a;
+    color: #e0c8c8;
+    line-height: 1.6;
+    min-height: 100vh;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+/* ===== MODO CLARO ===== */
+body.claro table {
+    background: #16213e;
+}
+body.claro {
+    background: #0a1628;
+    color: #a8c8e8;
+}
+
+body.claro .card {
+    background: #0d1f3c;
+    border-color: #2a6f8f;
+}
+
+body.claro .card h2 {
+    color: #4aa8d4;
+    border-bottom-color: #2a6f8f;
+}
+
+body.claro h1 {
+    color: #4aa8d4;
+}
+
+body.claro .subtitulo {
+    color: #7aa8c8;
+}
+
+body.claro label {
+    color: #4aa8d4;
+}
+
+body.claro input, 
+body.claro select, 
+body.claro textarea {
+    background: #0a1628;
+    border-color: #2a6f8f;
+    color: #a8c8e8;
+}
+
+body.claro input:focus, 
+body.claro select:focus, 
+body.claro textarea:focus {
+    border-color: #4aa8d4;
+    box-shadow: 0 0 10px rgba(74, 168, 212, 0.3);
+}
+
+body.claro th {
+    background: #0a1628;
+    color: #4aa8d4;
+    border-bottom-color: #2a6f8f;
+}
+
+body.claro td {
+    border-bottom-color: #1a2a4a;
+    color: #a8c8e8;
+}
+
+body.claro tr:hover td {
+    background: #0d1f3c;
+    color: #4aa8d4;
+}
+
+body.claro .btn-guardar {
+    background: #0d1f3c;
+    border-color: #2a6f8f;
+    color: #a8c8e8;
+}
+
+body.claro .btn-guardar:hover {
+    background: #7b4fa0;
+    border-color: #7b4fa0;
+    color: #ffffff;
+}
+
+body.claro .btn-actualizar {
+    background: #0d1f3c;
+    border-color: #2a6f8f;
+    color: #a8c8e8;
+}
+
+body.claro .btn-actualizar:hover {
+    background: #7b4fa0;
+    border-color: #7b4fa0;
+    color: #ffffff;
+}
+
+body.claro .btn-cancelar {
+    background: #0d1f3c;
+    border-color: #8b3a3a;
+    color: #a8c8e8;
+}
+
+body.claro .btn-cancelar:hover {
+    background: #8b3a3a;
+    color: #0a1628;
+}
+
+body.claro .btn-editar {
+    background: #0d1f3c;
+    border-color: #2a4a6a;
+    color: #a8c8e8;
+}
+
+body.claro .btn-editar:hover {
+    background: #2a4a6a;
+    color: #0a1628;
+}
+
+body.claro .btn-eliminar {
+    background: #0d1f3c;
+    border-color: #6a1a1a;
+    color: #a8c8e8;
+}
+
+body.claro .btn-eliminar:hover {
+    background: #6a1a1a;
+    color: #0a1628;
+}
+
+body.claro .mensaje-exito {
+    background: #2a1a3a;
+    color: #b09cd4;
+    border-left-color: #7b4fa0;
+}
+
+body.claro .mensaje-error {
+    background: #1a0a28;
+    color: #d46a6a;
+    border-left-color: #8b3a3a;
+}
+
+body.claro .mensaje-info {
+    background: #2a1a3a;
+    color: #b09cd4;
+    border-left-color: #7b4fa0;
+}
+
+body.claro .cargando {
+    color: #7aa8c8;
+}
+
+body.claro ::placeholder {
+    color: #3a5a7a;
+}
+
+body.claro select {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%234aa8d4' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'></polyline></svg>");
+}
+
+body.claro::-webkit-scrollbar-track {
+    background: #0a1628;
+}
+
+body.claro::-webkit-scrollbar-thumb {
+    background: #2a6f8f;
+}
+
+body.claro::-webkit-scrollbar-thumb:hover {
+    background: #4aa8d4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ===== Titulos ===== */
+h1 {
+    color: #c46464;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 5px rgba(196, 100, 100, 0.5);
+}
+
+.subtitulo {
+    color: #a08080;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+/* ===== Tarjetas ===== */
+.card {
+    background: #1a1212;
+    border-radius: 20px;
+    padding: 25px;
+    margin-bottom: 30px;
+    border: 2px solid #8b3a3a;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+
+.card h2 {
+    color: #c46464;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #8b3a3a;
+    display: inline-block;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+}
+
+/* ===== Formulario ===== */
+.campo {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #c46464;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    background: #0d0a0a;
+    border: 2px solid #8b3a3a;
+    border-radius: 8px;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    color: #e0c8c8;
+    transition: all 0.2s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #c46464;
+    box-shadow: 0 0 10px rgba(196, 100, 100, 0.3);
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* ===== Botones ===== */
+.botones-form {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Courier New', monospace;
+    transition: all 0.2s ease;
+}
+
+.btn-guardar {
+    background: #1a1212;
+    color: #e0c8c8;
+    border: 2px solid #8b3a3a;
+}
+
+.btn-guardar:hover {
+    background: #7b4fa0;
+    border-color: #7b4fa0;
+    color: #ffffff;
+    box-shadow: 0 0 10px rgba(123, 79, 160, 0.3);
+    transform: translateY(-2px);
+}
+
+.btn-actualizar {
+    background: #1a1212;
+    color: #e0c8c8;
+    border: 2px solid #8b3a3a;
+}
+
+.btn-actualizar:hover {
+    background: #7b4fa0;
+    border-color: #7b4fa0;
+    color: #ffffff;
+    box-shadow: 0 0 10px rgba(123, 79, 160, 0.3);
+    transform: translateY(-2px);
+}
+
+.btn-cancelar {
+    background: #1a1212;
+    color: #e0c8c8;
+    border: 2px solid #8b3a3a;
+}
+
+.btn-cancelar:hover {
+    background: #8b3a3a;
+    border-color: #a84a4a;
+    color: #0d0a0a;
+    transform: translateY(-2px);
+}
+
+.btn-editar {
+    background: #1a1212;
+    color: #e0c8c8;
+    border: 1px solid #2a4a6a;
+    padding: 6px 12px;
+    font-size: 12px;
+    margin-right: 5px;
+    border-radius: 20px;
+}
+
+.btn-editar:hover {
+    background: #2a4a6a;
+    border-color: #3a6a8a;
+    color: #0d0a0a;
+    box-shadow: 0 0 8px rgba(42, 74, 106, 0.3);
+}
+
+.btn-eliminar {
+    background: #1a1212;
+    color: #e0c8c8;
+    border: 1px solid #8b3a3a;
+    padding: 6px 12px;
+    font-size: 12px;
+    border-radius: 20px;
+}
+
+.btn-eliminar:hover {
+    background: #8b3a3a;
+    border-color: #a84a4a;
+    color: #0d0a0a;
+    box-shadow: 0 0 8px rgba(139, 58, 58, 0.3);
+}
+
+/* ===== Boton de cambio de modo ===== */
+.btn-modo {
+    background: #1a1212;
+    color: #e0c8c8;
+    border: 2px solid #8b3a3a;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.btn-modo:hover {
+    background: #8b3a3a;
+    border-color: #c46464;
+    color: #0d0a0a;
+    box-shadow: 0 0 10px rgba(196, 100, 100, 0.3);
+}
+
+body.claro .btn-modo {
+    background: #0d1f3c;
+    border-color: #2a6f8f;
+    color: #a8c8e8;
+}
+
+body.claro .btn-modo:hover {
+    background: #2a6f8f;
+    border-color: #4aa8d4;
+    color: #0a1628;
+}
+
+/* ===== Tabla ===== */
+.tabla-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #120c0c;
+    border: 2px solid #8b3a3a;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+th {
+    background: #1a1212;
+    color: #c46464;
+    padding: 12px;
+    text-align: left;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    border-bottom: 2px solid #8b3a3a;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #2a1a1a;
+    color: #c8b0b0;
+}
+
+tr:hover td {
+    background: #1a1212;
+    color: #c46464;
+}
+
+.cargando {
+    text-align: center;
+    color: #a08080;
+    padding: 40px;
+    font-style: italic;
+}
+
+/* ===== Mensajes flotantes ===== */
+.mensaje {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 15px 25px;
+    border-radius: 10px;
+    display: none;
+    z-index: 1000;
+    animation: slideIn 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.mensaje-exito {
+    background: #2a1a3a;
+    color: #b09cd4;
+    border-left: 5px solid #7b4fa0;
+}
+
+.mensaje-error {
+    background: #2a1a1a;
+    color: #c46464;
+    border-left: 5px solid #8b3a3a;
+}
+
+.mensaje-info {
+    background: #2a1a3a;
+    color: #b09cd4;
+    border-left: 5px solid #7b4fa0;
+}
+
+/* ===== Select personalizado ===== */
+select {
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23c46464' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'></polyline></svg>");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+}
+
+/* ===== Placeholder ===== */
+::placeholder {
+    color: #5a4a4a;
+    opacity: 1;
+}
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+    color: #5a4a4a;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    .card {
+        padding: 15px;
+    }
+    
+    .botones-form {
+        flex-direction: column;
+    }
+    
+    button {
+        width: 100%;
+    }
+    
+    th, td {
+        padding: 8px;
+        font-size: 11px;
+    }
+    
+    .btn-editar, .btn-eliminar {
+        display: inline-block;
+        margin-bottom: 5px;
+        width: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .tabla-container {
+        font-size: 10px;
+    }
+    
+    th, td {
+        padding: 5px;
+    }
+    
+    .btn-editar, .btn-eliminar {
+        padding: 4px 8px;
+        font-size: 9px;
+    }
+}
+
+/* ===== Estilo para el contenedor de la tabla ===== */
+#cuerpoTabla td {
+    word-break: break-word;
+}
+
+/* ===== Scrollbar personalizada ===== */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0d0a0a;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #8b3a3a;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #c46464;
+}

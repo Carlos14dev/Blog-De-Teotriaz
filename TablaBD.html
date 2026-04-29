@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base De Datos</title>
+     <link rel="stylesheet" href="/css/estilos.css">
+     <link rel="stylesheet" href="/CSS/Deco.css">
+</head>
+<body bgcolor="#0a0a0a" text="#cccccc">
+    <header class="encabezado">
+        <h1 class="titulo">Blog de Teorías Conspirativas</h1>
+        
+        <!-- NAVEGACIÓN GLOBAL -->
+        <nav class="nav-global">
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="tabla.html">TABLA</a></li>
+                <li><a href="formulario.html">FORMULARIO</a></li>
+                <li><a href="multimedia.html">MULTIMEDIA</a></li>
+                <li><a href="TablaBD.html">Base de Datos</a></li>
+                <li><button onclick="cambiarModo()" id="botonModo" class="boton-nav">Tomar Pastilla Azul</button></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Gestión de Teorías Conspirativas</h1>
+        
+        <!-- Mensaje de estado -->
+        <div id="mensaje" class="mensaje"></div>
+        
+        <!-- FORMULARIO para Crear/Actualizar -->
+        <div class="card formulario-card">
+            <h2 id="formTitulo">Nueva Teoría Conspirativa</h2>
+            <form id="teoriaForm">
+                <input type="hidden" id="teoriaId">
+                
+                <div class="campo">
+                    <label>Nombre de la Teoría:</label>
+                    <input type="text" id="nombre" required placeholder="Ej: Tierra Plana">
+                </div>
+                
+                <div class="campo">
+                    <label>Porcentaje de Credibilidad (0-100):</label>
+                    <input type="number" id="porcentajeCredibilidad" step="1" required placeholder="Ej: 15">
+                </div>
+                
+                <div class="campo">
+                    <label>Categoría:</label>
+                    <input type="text" id="categoria" required placeholder="Ej: Pseudoastronomía">
+                </div>
+                
+                <div class="campo">
+                    <label>Año de Origen:</label>
+                    <input type="number" id="añoOrigen" step="1" placeholder="Ej: 1850">
+                </div>
+                
+                <div class="campo">
+                    <label>Estado de Vigencia:</label>
+                    <select id="estadoVigencia">
+                        <option value="Activa">Activa</option>
+                        <option value="Desmentida">Desmentida</option>
+                        <option value="En investigación">En investigación</option>
+                    </select>
+                </div>
+                
+                <div class="campo">
+                    <label>Descripción:</label>
+                    <textarea id="descripcion" rows="3" required placeholder="Describe la teoría conspirativa..."></textarea>
+                </div>
+                
+                <div class="botones-form">
+                    <button type="submit" id="btnGuardar" class="btn-guardar">Guardar Teoría</button>
+                    <button type="button" id="btnCancelar" class="btn-cancelar" style="display: none;">❌ Cancelar</button>
+                </div>
+            </form>
+        </div>
+        
+        <!-- TABLA para Listar -->
+        <div class="card tabla-card">
+            <h2>Archivo de Teorías</h2>
+            <div class="tabla-container">
+                <table id="tablaTeorias" border="1" cellpadding="8" cellspacing="0" width="100%">
+                    <thead bgcolor="#1a1a1a">
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre</th>
+                            <th>% Credibilidad</th>
+                            <th>Categoría</th>
+                            <th>Año Origen</th>
+                            <th>Estado Vigencia</th>
+                            <th>Descripción</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cuerpoTabla">
+                        <tr>
+                            <td colspan="8" align="center">Cargando teorías desde los archivos secretos...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+     <footer class="pie">
+        <p>Blog creado como práctica de HTML - No tomar las teorías demasiado en serio.</p>
+        <p>&copy; 2025 Blog de Teorías Conspirativas. Todos los derechos reservados.</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="tabla.html">Tabla</a></li>
+                <li><a href="formulario.html">Formulario</a></li>
+                <li><a href="multimedia.html">Multimedia</a></li>
+                <li><a href="TablaBD.html">Base de Datos</a></li>
+            </ul>
+        </nav>
+    </footer>
+    <script src="../JS/elJS.js"></script>
+    <script src="../JS/app.js"></script>
+</body>
+</html>

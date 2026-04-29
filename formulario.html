@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario - Teorías Conspirativas</title>
+    <link rel="stylesheet" href="/CSS/Deco.css">
+</head>
+<body bgcolor="#0a0a0a" text="#cccccc" link="#00ffff" vlink="#ff9900" alink="#ff0000">
+
+    <header class="encabezado">
+        <h1 class="titulo">Blog de Teorías Conspirativas</h1>
+        
+        <!-- NAVEGACIÓN GLOBAL -->
+        <nav class="nav-global">
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="tabla.html">TABLA</a></li>
+                <li><a href="formulario.html">FORMULARIO</a></li>
+                <li><a href="multimedia.html">MULTIMEDIA</a></li>
+                <li><a href="TablaBD.html">Base de Datos</a></li>
+                <li><button onclick="cambiarModo()" id="botonModo" class="boton-nav">Tomar Pastilla Azul</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contenedor">
+        <h1 class="titulo">Cuestionario de teorías conspiranoicas</h1>
+        <p class="descripcion">Por favor, completa este formulario para el estudio. Recuerda: <q>la verdad está ahí fuera</q>.</p>
+
+        <!-- FORMULARIO PRINCIPAL con clase CSS -->
+        <form action="#" method="post" class="formulario-conspi" id="formulario">
+
+            <fieldset>
+                <legend>Datos de nuevos Investigadores</legend>
+                
+                <label for="nombre">Nombre del investigador:</label><br>
+                <input type="text" id="nombre" name="nombre" placeholder="Ej. Investigador X"><br><br>
+                
+                <label for="email">Correo electrónico (para enviar pruebas):</label><br>
+                <input type="email" id="email" name="email" placeholder="???.???.???"><br><br>
+                
+                <label for="telefono">Teléfono de contacto (línea segura):</label><br>
+                <input type="tel" id="telefono" name="telefono" placeholder="+52 55 1234 5678" title="Ingresa al menos 10 dígitos"><br><br>
+                
+                <label for="teoria">Cuéntanos tu propia teoría conspirativa:</label><br>
+                <textarea id="teoria" name="teoria" rows="5" cols="50" placeholder="Ej: Las palomas no son reales..."></textarea><br><br>
+                
+                <label for="teoria_favorita">¿Cuál es tu teoría favorita de las que hemos visto?</label><br>
+                <select id="teoria_favorita" name="teoria_favorita">
+                    <option value="">-- Selecciona una --</option>
+                    <option value="plana">Tierra Plana</option>
+                    <option value="reptilianos">Reptilianos</option>
+                    <option value="luna">Falso Alunizaje</option>
+                    <option value="pajaros">Pájaros Drones</option>
+                    <option value="hueca">Tierra Hueca</option>
+                </select><br><br>
+                
+                <label for="evidencia">Sube una foto de tu "evidencia":</label><br>
+                <input type="file" id="evidencia" name="evidencia" accept="image/*" capture="camera"><br>
+                <font color="#ff4444" size="2"><p>La cámara se abrirá para tomar tu foto de investigador</p></font>
+                <br>
+            </fieldset>
+
+            <!-- Pregunta 1 -->
+            <fieldset>
+                <legend>¿Quién controla realmente el clima?</legend>
+                <input type="radio" id="Naturaleza" name="p1" value="naturaleza" required>
+                <label for="Naturaleza">La Naturaleza</label><br>
+                <input type="radio" id="Gobierno" name="p1" value="gobierno">
+                <label for="Gobierno">Los Gobiernos</label><br>
+                <input type="radio" id="Cientificos" name="p1" value="cientificos">
+                <label for="Cientificos">Los Científicos con un ventilador gigante</label><br>
+                <input type="radio" id="Vecino" name="p1" value="Vecino">
+                <label for="Vecino">Mi Vecino que lava su carro</label>
+            </fieldset>
+            <br>
+
+            <!-- Pregunta 2 -->
+            <fieldset>
+                <legend>¿Qué esconden realmente las palomas?</legend>
+                <input type="radio" id="Mensajes" name="p2" value="mensajes">
+                <label for="Mensajes">Mensajes ocultos</label><br>
+                <input type="radio" id="Cámaras" name="p2" value="camaras">
+                <label for="Cámaras">Cámaras de vigilancia diminutas</label><br>
+                <input type="radio" id="5G" name="p2" value="5g">
+                <label for="5G">Chips 5G</label><br>
+                <input type="radio" id="Drones" name="p2" value="drones">
+                <label for="Drones">Son drones del gobierno</label><br>
+            </fieldset>
+            <br>
+
+            <!-- Pregunta 3 -->
+            <fieldset>
+                <legend>¿Por qué el WIFI se pone más lento?</legend>
+                <input type="radio" id="Casualidad" name="p3" value="casualidad" required>
+                <label for="Casualidad">Casualidad</label><br>
+                <input type="radio" id="Interferencia" name="p3" value="interferencia">
+                <label for="Interferencia">Interferencia de señales</label><br>
+                <input type="radio" id="FBI" name="p3" value="fbi">
+                <label for="FBI">El FBI está descargando el contenido de mi router</label><br>
+                <input type="radio" id="Porque si" name="p3" value="porque si">
+                <label for="Porque si">Porque sí</label>
+            </fieldset>
+            <br>
+
+            <!-- Pregunta 4 -->
+            <fieldset>
+                <legend>¿La Tierra es realmente…?</legend>
+                <input type="radio" id="Redonda" name="p4" value="redonda" required>
+                <label for="Redonda">Redonda</label><br>
+                <input type="radio" id="Plana" name="p4" value="plana">
+                <label for="Plana">Plana</label><br>
+                <input type="radio" id="Hexagonal" name="p4" value="hexagonal">
+                <label for="Hexagonal">Hexagonal</label><br>
+                <input type="radio" id="tortuga" name="p4" value="tortuga">
+                <label for="tortuga">Una tortuga gigante</label>
+            </fieldset>
+            <br>
+
+            <!-- Pregunta 5 -->
+            <fieldset>
+                <legend>¿Por qué algunas teorías conspiranoicas se vuelven tan populares?</legend>
+                <input type="radio" id="pa" name="p5" value="a" required>
+                <label for="pa">Porque presentan "datos ocultos"</label><br>
+                <input type="radio" id="pb" name="p5" value="b">
+                <label for="pb">Porque desconfían de la versión oficial</label><br>
+                <input type="radio" id="pc" name="p5" value="c">
+                <label for="pc">Porque el algoritmo recomienda</label><br>
+                <input type="radio" id="pd" name="p5" value="d">
+                <label for="pd">Porque la gente disfruta sentirse especial</label>
+            </fieldset>
+            <br>
+
+            <!-- Pregunta 6 (Checkboxes) -->
+            <fieldset>
+                <legend>¿Qué señales indican que "algo raro" está pasando?</legend>
+                <input type="checkbox" id="s1" name="senal1" value="internet">
+                <label for="s1">El internet falla justo cuando investigas</label><br>
+                <input type="checkbox" id="s2" name="senal2" value="videos">
+                <label for="s2">Te recomiendan videos demasiado específicos</label><br>
+                <input type="checkbox" id="s3" name="senal3" value="oficial">
+                <label for="s3">Siempre hay una "explicación oficial"</label><br>
+                <input type="checkbox" id="s4" name="senal4" value="gato">
+                <label for="s4">Tu gato te mira diferente</label>
+            </fieldset>
+            <br>
+
+            <!-- Pregunta 7 (Checkboxes) -->
+            <fieldset>
+                <legend>¿Qué organizaciones "misteriosas" podrían estar involucradas?</legend>
+                <input type="checkbox" id="o1" name="org1" value="iluminatis">
+                <label for="o1">Iluminatis</label><br>
+                <input type="checkbox" id="o2" name="org2" value="reptilianos">
+                <label for="o2">Reptilianos</label><br>
+                <input type="checkbox" id="o3" name="org3" value="multinacionales">
+                <label for="o3">Multinacionales secretas</label><br>
+                <input type="checkbox" id="o4" name="org4" value="pizza">
+                <label for="o4">El club de los que odian la piña en la pizza</label>
+            </fieldset>
+            <br>
+
+            <!-- Pregunta 8 (Checkboxes) -->
+            <fieldset>
+                <legend>¿Qué cosas podrían ser experimentos sociales?</legend>
+                <input type="checkbox" id="e1" name="exp1" value="moda">
+                <label for="e1">Cambios de moda repentinos</label><br>
+                <input type="checkbox" id="e2" name="exp2" value="retos">
+                <label for="e2">Retos virales</label><br>
+                <input type="checkbox" id="e3" name="exp3" value="software">
+                <label for="e3">Actualizaciones de software</label><br>
+                <input type="checkbox" id="e4" name="exp4" value="reggaeton">
+                <label for="e4">El reguetón</label>
+            </fieldset>
+            <br>
+
+            <!-- Pregunta 9 (Checkboxes) -->
+            <fieldset>
+                <legend>¿Qué objetos podrían estar espiándote?</legend>
+                <input type="checkbox" id="ob1" name="obj1" value="celular">
+                <label for="ob1">El celular</label><br>
+                <input type="checkbox" id="ob2" name="obj2" value="tv">
+                <label for="ob2">La Smart TV</label><br>
+                <input type="checkbox" id="ob3" name="obj3" value="tostadora">
+                <label for="ob3">La tostadora inteligente</label><br>
+                <input type="checkbox" id="ob4" name="obj4" value="microondas">
+                <label for="ob4">El microondas</label>
+            </fieldset>
+            <br>
+
+            <!-- Pregunta 10 (Checkboxes) -->
+            <fieldset>
+                <legend>¿Qué pruebas "irrefutables" usan los conspiranoicos?</legend>
+                <input type="checkbox" id="pr1" name="prueba1" value="videos">
+                <label for="pr1">Videos borrosos</label><br>
+                <input type="checkbox" id="pr2" name="prueba2" value="capturas">
+                <label for="pr2">Capturas sin fuente</label><br>
+                <input type="checkbox" id="pr3" name="prueba3" value="amigo">
+                <label for="pr3">"Un amigo me dijo"</label><br>
+                <input type="checkbox" id="pr4" name="prueba4" value="foros">
+                <label for="pr4">Teorías en foros a las 3 a.m.</label>
+            </fieldset>
+            <p id="contadorRespuestas">Respuestas seleccionadas: 0</p>
+            <br>
+            <button class="targeta" id="arriba"> Arriba </button>
+            <!-- BOTONES -->
+            <button type="submit">ENVIAR FORMULARIO</button>
+            <button type="reset">BORRAR TODO </button>
+        </form>
+        <!-- Elemento para mostrar mensajes (ahora solo se usará para consola) -->
+        <div id="mensaje" style="margin-top: 20px; padding: 10px; color: #ff4444;"></div>
+    </main>
+    <footer class="pie">
+        <p>Blog creado como práctica de HTML - No tomar las teorías demasiado en serio.</p>
+        <p>&copy; 2025 Blog de Teorías Conspirativas. Todos los derechos reservados.</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="tabla.html">Tabla</a></li>
+                <li><a href="formulario.html">Formulario</a></li>
+                <li><a href="multimedia.html">Multimedia</a></li>
+                <li><a href="TablaBD.html">Base de Datos</a></li>
+            </ul>
+        </nav>
+    </footer>
+    <script src="../JS/elJS.js"></script>
+</body>
+</html>

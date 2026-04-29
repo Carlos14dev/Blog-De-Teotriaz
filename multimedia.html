@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Multimedia</title>
+    <link rel="stylesheet" href="/CSS/Deco.css">
+</head>
+<body bgcolor="black" text="red" link="#00ffff" vlink="#ff9900" alink="#ff0000">
+
+    <header class="encabezado">
+        <h1 class="titulo">Blog de Teorías Conspirativas</h1>
+        
+        <!-- NAVEGACIÓN GLOBAL -->
+          <nav class="nav-global">
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="tabla.html">TABLA</a></li>
+                <li><a href="formulario.html">FORMULARIO</a></li>
+                <li><a href="multimedia.html">MULTIMEDIA</a></li>
+                <li><a href="TablaBD.html">Base de Datos</a></li>
+                <li><button onclick="cambiarModo()" id="botonModo" class="boton-nav">Tomar Pastilla Azul</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <center>
+            <br><br>
+            <div class="ojos-observadores">
+            <div class="ojo">👀</div>
+            <h1 class="titulo" style="color: red; font-size: 3rem;">NOS ESTÁN OBSERVANDO </h1>
+            <div class="ojo">👀</div>
+            </div>
+
+            <audio controls>
+                <source src="../audios/1.mp3" type="audio/mpeg">
+                Tu navegador no soporta audio.
+            </audio>
+            <br><br>
+            
+            <video width="600" controls poster="../image/Reptilianos.jpg">
+                <source src="../videos/Reptilianos.mp4" type="video/mp4">
+                Tu navegador no soporta video.
+            </video>
+            <br><br>
+            
+            <!-- CARRUSEL DE IMÁGENES -->
+            <div class="contenedor">
+                <img class="tarjeta activa" src="../image/Carrucel/1.png" alt="Teoría 1" width="500" height="300">
+                <img class="tarjeta" src="../image/Carrucel/2.gif" alt="Teoría 2" width="500" height="300">
+                <img class="tarjeta" src="../image/Carrucel/3.jpg" alt="Teoría 3" width="500" height="300">
+                <img class="tarjeta" src="../image/Carrucel/4.jpg" alt="Teoría 4" width="500" height="300">
+                <img class="tarjeta" src="../image/Carrucel/5.png" alt="Teoría 5" width="500" height="300">
+                <img class="tarjeta" src="../image/Carrucel/6.webp" alt="Teoría 6" width="500" height="300">
+                <img class="tarjeta" src="../image/Carrucel/7.webp" alt="Teoría 7" width="500" height="300">
+                <img class="tarjeta" src="../image/Carrucel/8.jpg" alt="Teoría 8" width="500" height="300">
+                <img class="tarjeta" src="../image/Carrucel/9.webp" alt="Teoría 9" width="500" height="300">
+                <img class="tarjeta" src="../image/Carrucel/10.jpg" alt="Teoría 10" width="500" height="300">
+            </div>
+            
+            <br>
+            <button id="anterior">Anterior</button>
+            <button id="siguiente">Siguiente</button>
+            <button class="like-btn"> 👍 </button> <span class="like-count">0</span>
+            <br><br>
+        </center>
+        <button class="targeta" id="arriba"> Arriba </button>
+    </main>
+
+    <footer class="pie">
+        <p>Blog creado como práctica de HTML - No tomar las teorías demasiado en serio.</p>
+        <p>&copy; 2025 Blog de Teorías Conspirativas.</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="tabla.html">Tabla</a></li>
+                <li><a href="formulario.html">Formulario</a></li>
+                <li><a href="multimedia.html">Multimedia</a></li>
+                <li><a href="TablaBD.html">Base de Datos</a></li>
+            </ul>
+        </nav>
+    </footer>
+    <script src="../JS/elJS.js"></script>
+</body>
+</html>
