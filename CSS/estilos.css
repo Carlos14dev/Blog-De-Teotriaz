@@ -564,7 +564,6 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 ::-webkit-scrollbar-thumb:hover {
     background: #c46464;
 }
-
 /* Agregar al final de estilos.css */
 
 /* === RESPONSIVE PARA LA TABLA CRUD === */
